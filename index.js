@@ -63,10 +63,30 @@ const questions = [{
 }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+async function init() {
+    const answers = await inquirer.prompt(questions)
+
+    data.title = answers.title;
+    data.description = answers.description;
+    data.installation = answers.installation;
+    data.usage = answers.usage;
+    data.license = answers.license;
+    data.contributions = answers.contributions;
+    data.test = answers.tests;
+    data.github = answers.github;
+    data.email = answers.email
+
+    const markdownData = generateMarkdown(data);
+    writeToFile('README.md', markdownData)
+    console.log(markdownData)
+}
 
 // Function call to initialize app
 init();
