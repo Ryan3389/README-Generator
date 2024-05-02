@@ -4,7 +4,8 @@
 # README Generator
 
 ## Description
-Using the inquirer package, asnwer a few questions, then based on your answers, a new readme file is dynamically generated
+Using the inquirer package, run node index.js in the terminal, the user will be asked to answer a few questions about their project, then based on their answers, a new README.md file will be generated.
+
 
 ## Table of Contents
 - [Installation](#installation)
@@ -38,6 +39,9 @@ run node index.js in the terminal
 If you have any questions please contact:
 GitHub: [Ryan3389](https://github.com/Ryan3389)
 Email: Ryan.Cuthbert12@gmail.com
+
+## Sources
+The code in this project was written completely by myself. However Xpert Learning Assistant was used as a general guide,  and to debug minor bugs in the application. To clarify, the code was written on my own.
 
 ## Video Link
 https://drive.google.com/file/d/12c-yIymel_ZYnqdj5nAOZ7ffITimLP6z/view 
