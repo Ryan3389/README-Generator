@@ -4,7 +4,7 @@
 # README Generator
 
 ## Description
-This project used the inquirer package to provide the user with a series of questions in the terminal. Based on the answers submitted, that data will be used to create a new README.md file for your project.
+Using the inquirer package, asnwer a few questions, then based on your answers, a new readme file is dynamically generated
 
 ## Table of Contents
 - [Installation](#installation)
